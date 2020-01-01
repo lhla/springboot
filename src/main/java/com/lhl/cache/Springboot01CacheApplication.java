@@ -3,6 +3,8 @@ package com.lhl.cache;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+
 /**
  * 一、搭建基本环境
  * 1、导入数据库文件 创建出department和employee表
@@ -38,6 +40,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @MapperScan("com.lhl.cache.mapper")
 @SpringBootApplication
+@EnableCaching
 public class Springboot01CacheApplication {
 
 	public static void main(String[] args) {
